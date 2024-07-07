@@ -34,11 +34,15 @@ export default function HomePage() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        <div>
+        <div className="m-5">
             <Outlet/>
         </div>
-        <div>
-
+        <div className="m-1">
+            <div>
+                <Image width='99' height='45' src={logo}/>
+            </div>
+            <div></div>
+            <div></div>
         </div>
     </div>);
 }

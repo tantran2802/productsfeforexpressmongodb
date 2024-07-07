@@ -33,8 +33,8 @@ export default function Info(){
         <div className="w-50 h-100 p-5">
             <h1 className="mt-5">Discover the Power of Flexi Disc Products</h1>
             <p className="mt-5">Experience fast and effective pain relief with our innovative Flexi Disc products. Say goodbye to discomfort and hello to a pain-free life.</p>
-            <button className="bg-background me-3">Shop Now</button>
-            <button className="bg-background">Learn More</button>
+            <button type="button" className="btn bg-dark text-background m-3">Shop Now</button>
+            <button type="button" className="btn bg-background m-3">Learn More</button>
         </div>
         <div className="w-50">
             {products.length > 0 ? 
@@ -43,7 +43,7 @@ export default function Info(){
                     products[0].image.map((imag,i) =>{
                         return (
                             <Carousel.Item>
-                                <img key={i} className="d-block m-auto p-auto" width='475' height='600' src={imag}/>
+                                <img key={i} className="d-block m-auto p-auto" width='400' height='600' src={imag}/>
                             </Carousel.Item>
                         )
                     })
@@ -68,7 +68,7 @@ export default function Info(){
                     products[1].image.map((imag,i) =>{
                         return (
                             <Carousel.Item>
-                                <img key={i} className="d-block m-auto p-auto" width='475' height='600' src={imag}/>
+                                <img key={i} className="d-block m-auto p-auto" width='400' height='600' src={imag}/>
                             </Carousel.Item>
                         )
                     })
@@ -81,6 +81,25 @@ export default function Info(){
         }
         </div>
         </div>
-
+        <div className="w-100 mt-5 ms-0 me-0">
+            <div className="">
+                <h1 className="text-center">Pricing Options</h1>
+                <p className="text-center">Choose the plan that suits your needs and budget.</p>
+                <div className="d-flex justify-content-center">
+                <button type="button" className="btn bg-dark text-background m-3">Pack</button>
+                <button type="button" className="btn bg-background m-3">Box</button>
+                </div>
+                <div className="container-fluid d-flex mt-5">
+                    <div className="m-auto p-5 border border-dark">
+                        <h5 className="text-center">Neck Patch</h5>
+                        <h1 className="text-center">$1.09/2pcs</h1>
+                    </div>
+                    <div className="m-auto p-5 border border-dark">
+                        <h5 className="text-center">Back Patch</h5>
+                        <h1 className="text-center">$1.39/2pcs</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>);
 }
