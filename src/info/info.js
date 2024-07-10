@@ -113,18 +113,18 @@ export default function Info(){
                     </div>
                 </div> */}
             </Col>
-            <Col xs={12} md={6} className="pricing-option">
+            <Col xs={12} md={6} className="pricing-option border border-dark">
                     <div className={selectedOption === 'piece' ? 'active' : ''}>
                         <h2>Neck Patch</h2>
                         <p>{selectedOption === 'piece' ? '$1.19 per two pieces' : '$5.89 per packet 10 pieces'}</p>
                     </div>
-                </Col>
-                <Col xs={12} md={6} className="pricing-option">
+            </Col>
+            <Col xs={12} md={6} className="pricing-option border border-dark">
                     <div className={selectedOption === 'piece' ? 'active' : ''}>
                         <h2>Back Patch</h2>
                         <p>{selectedOption === 'piece' ? '$1.39 per two pieces' : '$6.89 per packet 10 pieces'}</p>
                     </div>
-                </Col>
+            </Col>
         </Row>
         </Container>);
 }
