@@ -1,5 +1,6 @@
 /* The following block can be included in a custom.scss */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Custom Styles */
 *{
   font-family: sans-serif;
 }
@@ -20,6 +21,91 @@ $grid-breakpoints: (
   'xl': 1200px,
   'xxl': 1400px
 );
-  
+
+/* Navbar */
+
+/* Custom Styles for Sections */
+.my-5 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.text-section {
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}
+
+.carousel-section {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.purchasing-options {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pricing-option {
+  margin-top: 1rem;
+  text-align: center;
+  &.active {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    font-size: 14px;
+  }
+  .text-section {
+    text-align: center;
+    p {
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .carousel-section {
+    margin-top: 2rem;
+  }
+  .purchasing-options {
+    margin-top: 1rem;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+/* Navbar */
+/* Media Queries */
+/* @media (max-width: 768px) {
+  .custom-class {
+    font-size: 14px;
+  }
+  .navbar {
+    .nav-link {
+      font-size: 12px;
+    }
+  }
+} */
+
+
   /* import bootstrap to set changes */
 @import '~bootstrap/scss/bootstrap';

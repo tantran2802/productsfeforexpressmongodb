@@ -1,10 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import { Image } from "react-bootstrap";
+import { Image, Row, Col } from "react-bootstrap";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo from '../assets/logo.png'
+import Footer from "./footer";
 export default function HomePage() {
     return (<div>
         <Navbar expand="lg" className="bg-background">
@@ -34,15 +35,29 @@ export default function HomePage() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        <div className="m-5">
+        <div className="content">
             <Outlet/>
         </div>
-        <div className="m-1">
-            <div>
+        <Footer />
+        {/* <div className="bg-dark text-white mt-5">
+            
                 <Image width='99' height='45' src={logo}/>
-            </div>
-            <div></div>
-            <div></div>
-        </div>
+                <Container>
+                <Row>
+                    <Col md={4}>
+                        <h5>About Us</h5>
+                        <p>Some content about the company.</p>
+                    </Col>
+                    <Col md={4}>
+                        <h5>Contact</h5>
+                        <p>Contact details here.</p>
+                    </Col>
+                    <Col md={4}>
+                        <h5>Follow Us</h5>
+                        <p>Social media links here.</p>
+                    </Col>
+                </Row>
+            </Container>
+        </div> */}
     </div>);
 }

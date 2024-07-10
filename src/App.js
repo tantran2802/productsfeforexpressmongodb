@@ -14,7 +14,7 @@ const elements = [
 
             },
             {
-                path: 'info',
+                path: '',
                 element: <Info/>
 
             }
