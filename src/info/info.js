@@ -17,7 +17,6 @@ export default function Info(){
             'https://ogu8fnrpv7.execute-api.ap-southeast-1.amazonaws.com/dev/api/products',
         {
             method: 'GET',
-            // mode: 'cors'
         }).then(async (data) => {
             const dataReturned = await data.json();
             setProducts(dataReturned)
@@ -102,16 +101,6 @@ export default function Info(){
                             Packet
                     </Button>
                 </div>
-                {/* <div className="container-fluid d-flex mt-5">
-                    <div className="m-auto p-5 border border-dark">
-                        <h5 className="text-center">Neck Patch</h5>
-                        <h1 className="text-center">$1.09/2pcs</h1>
-                    </div>
-                    <div className="m-auto p-5 border border-dark">
-                        <h5 className="text-center">Back Patch</h5>
-                        <h1 className="text-center">$1.39/2pcs</h1>
-                    </div>
-                </div> */}
             </Col>
             <Col xs={12} md={6} className="pricing-option border border-dark">
                     <div className={selectedOption === 'piece' ? 'active' : ''}>

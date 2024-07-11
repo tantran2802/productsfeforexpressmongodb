@@ -13,7 +13,7 @@ const Footer = () => {
                         <p>Sign up for our newsletter to stay updated on new features and releases.</p>
                         <Form inline className="newsletter-form">
                             <Form.Control type="email" placeholder="Enter your email" className="mr-2" />
-                            <Button variant="primary" type="submit">Subscribe</Button>
+                            <Button variant="dark" type="submit">Subscribe</Button>
                         </Form>
                         <p className="small mt-2">By subscribing, you agree to our Privacy Policy and consent to receive updates from our company.</p>
                     </Col>

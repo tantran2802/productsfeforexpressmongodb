@@ -1,9 +1,5 @@
 @import 'custom';
-/* The following line can be included in a src/App.scss */
-// @import '~bootstrap/scss/bootstrap';
 @function theme-color($color-name) {
     @return map-get($theme-colors, $color-name);
   }
-/* body{
-    background-color: theme-color('neutral2');
-} */
+
