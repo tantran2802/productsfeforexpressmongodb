@@ -12,12 +12,12 @@ export default function HomePage() {
             <Container className="">
                 <Navbar.Brand className="rounded"
                                 as={Link} 
-                                to='/products'><Image src={logo} width='132' height='60' />
+                                to='/'><Image src={logo} width='132' height='60' />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto d-flex justify-content-evenly w-100">
-                    <Nav.Link as={Link} to='/'>About Us</Nav.Link>
+                    <Nav.Link as={Link} to='/about-us'>About Us</Nav.Link>
                     <Nav.Link as={Link} to='/'>Mission</Nav.Link>
                     <Nav.Link as={Link} to='/'>Products</Nav.Link>
                     <NavDropdown title="Contact" id="basic-nav-dropdown">
