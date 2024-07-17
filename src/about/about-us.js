@@ -7,7 +7,7 @@ export default function AboutUs(){
             <Row className="my-5 align-items-center">
                 <Col md={12}>
                     <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk" target="_blank">
-                    <Image src={poster} className="poster" width='1100rem'/>
+                    <Image src={poster} className="poster"/>
                     </a>
                 </Col>
                 <Col md={6} className="text-section">
@@ -38,7 +38,7 @@ export default function AboutUs(){
                     <Button variant="background" className="m-3">Sign Up</Button>
                 </Col>
                 <Col md={6}>
-                    <Image src={sideposter} className="sideposter" width='550rem' />
+                    <Image src={sideposter} className="sideposter"/>
                 </Col>
             </Row>
         </Container>

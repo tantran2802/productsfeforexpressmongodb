@@ -29,7 +29,14 @@ $grid-breakpoints: (
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
-
+.poster{
+  height: auto;
+  max-width: 100%;
+}
+.sideposter{
+  height: auto;
+  max-width: 100%;
+}
 .text-section {
   p {
     font-size: 1rem;
@@ -86,21 +93,21 @@ $grid-breakpoints: (
   .button-group {
     flex-direction: column;
   }
-  .poster{
+/*   .poster{
     width: 40rem;
   }
   .sideposter{
     width: 32rem;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
-  .poster{
+/*   .poster{
     width: 50rem;
   }
   .sideposter{
     width: 28rem;
-  }
+  } */
 }
 
 
