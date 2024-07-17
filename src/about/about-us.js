@@ -5,8 +5,10 @@ export default function AboutUs(){
     return(
         <Container>
             <Row className="my-5 align-items-center">
-                <Col md={12} className=''>
-                    <Image src={poster} width='1200vw'/>
+                <Col md={12}>
+                    <a href="https://www.youtube.com/watch?v=ByXuk9QqQkk" target="_blank">
+                    <Image src={poster} className="poster" width='1100rem'/>
+                    </a>
                 </Col>
                 <Col md={6} className="text-section">
                     <h1 className="m-3">Transforming Ideas into Beautiful and Functional Websites</h1>
@@ -18,7 +20,7 @@ export default function AboutUs(){
                 </Col>
             </Row>
             <Row className="my-5 align-items-center">
-                <Col md={6}>
+                <Col md={6} className="text-section">
                     <h6>Solutions</h6>
                     <h1 className="m-3">Transforming Businesses with Innovative Solutions</h1>
                     <p className="m-3">Our consulting services provide expert guidance and support to help businesses achieve their goals. We offer tailored solutions that address your unique challenges and drive growth.</p>
@@ -36,7 +38,7 @@ export default function AboutUs(){
                     <Button variant="background" className="m-3">Sign Up</Button>
                 </Col>
                 <Col md={6}>
-                    <Image src={sideposter} width='600vw' />
+                    <Image src={sideposter} className="sideposter" width='550rem' />
                 </Col>
             </Row>
         </Container>

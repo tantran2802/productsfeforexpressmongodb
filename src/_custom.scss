@@ -86,9 +86,22 @@ $grid-breakpoints: (
   .button-group {
     flex-direction: column;
   }
+  .poster{
+    width: 40rem;
+  }
+  .sideposter{
+    width: 32rem;
+  }
 }
 
-
+@media (max-width: 992px) {
+  .poster{
+    width: 50rem;
+  }
+  .sideposter{
+    width: 28rem;
+  }
+}
 
 
 
