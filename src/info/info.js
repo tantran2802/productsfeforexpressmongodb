@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import { Container, Row, Col, Button, Spinner } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
+import { useLanguage } from "../utility/language-context";
 export default function Info(){
+    const {t} = useLanguage();
     const [products, setProducts] = useState([]);
     const [index, setIndex] = useState(0);
     const [index1, setIndex1] = useState(0);
@@ -30,10 +32,10 @@ export default function Info(){
         <Container>
             <Row className="my-5 align-items-center">
                 <Col xs={12} md={6} className="text-section">
-                    <h1 className="">Discover the Power of Flexi Disc Products</h1>
-                    <p className="">Experience fast and effective pain relief with our innovative Flexi Disc products. Say goodbye to discomfort and hello to a pain-free life.</p>
-                    <button type="button" className="btn bg-dark text-background m-3">Shop Now</button>
-                    <button type="button" className="btn bg-background m-3">Learn More</button>
+                    <h1>{t("info-section1-h1")}</h1>
+                    <p>{t("info-section1-p")}</p>
+                    <button type="button" className="btn bg-dark text-background m-3">{t("info-section1-btn1")}</button>
+                    <button type="button" className="btn bg-background m-3">{t("info-section1-btn2")}</button>
                 </Col>
                 <Col xs={12} md={6} className="carousel-section">
                     {products.length > 0 ? 
@@ -57,8 +59,8 @@ export default function Info(){
             </Row>
             <Row className="my-5 align-items-center">
                 <Col xs={12} md={6} className="text-section">
-                    <h1 className="">Discover the Power of Our Pain Relief Patch for Fast and Effective Relief</h1>
-                    <p className="">Our Pain Relief Patch is specially formulated to provide fast and effective relief from pain. With its unique blend of ingredients, it targets the source of the pain and provides long-lasting relief.</p>
+                    <h1>{t("info-section2-h1")}</h1>
+                    <p>{t("info-section2-p")}</p>
                 </Col>
                 <Col xs={12} md={6} className="carousel-section">
                     {products.length > 0 ? 
@@ -82,38 +84,38 @@ export default function Info(){
             </Row>
             <Row className="my-5">
                 <Col xs={12}>
-                    <h1 className="text-center">Pricing Options</h1>
-                    <p className="text-center">Choose the plan that suits your needs and budget.</p>
+                    <h1 className="text-center">{t("info-section3-h1")}</h1>
+                    <p className="text-center">{t("info-section3-p")}</p>
                     <div className="button-group mb-3">
-                    {/* <button type="button" className="btn bg-dark text-background m-3">Pack</button>
-                    <button type="button" className="btn bg-background m-3">Box</button> */}
                         <Button
                                 variant={selectedOption === 'piece' ? 'dark' : 'secondary'}
                                 onClick={() => setSelectedOption('piece')}
                                 className="me-2"
                             >
-                                Piece
+                                {t("info-section3-btn1")}
                         </Button>
                         <Button
                                 variant={selectedOption === 'packet' ? 'dark' : 'secondary'}
                                 onClick={() => setSelectedOption('packet')}
                             >
-                                Packet
+                                {t("info-section3-btn2")}
                         </Button>
                     </div>
                 </Col>
                 <Col xs={12} md={6} className="pricing-option border border-dark">
                         <div className={selectedOption === 'piece' ? 'active' : ''}>
-                            <h2>Neck Patch</h2>
-                            <p>{selectedOption === 'piece' ? '$1.19 per two pieces' : '$5.89 per packet 10 pieces'}</p>
+                            <h2>{t("info-section3-div1-h2")}</h2>
+                            <p>{selectedOption === 'piece' ? t("info-section3-div1-p1") : t("info-section3-div1-p2")}</p>
                         </div>
                 </Col>
                 <Col xs={12} md={6} className="pricing-option border border-dark">
                         <div className={selectedOption === 'piece' ? 'active' : ''}>
-                            <h2>Back Patch</h2>
-                            <p>{selectedOption === 'piece' ? '$1.39 per two pieces' : '$6.89 per packet 10 pieces'}</p>
+                            <h2>{t("info-section3-div2-h2")}</h2>
+                            <p>{selectedOption === 'piece' ? t("info-section3-div2-p1") : t("info-section3-div2-p2")}</p>
                         </div>
                 </Col>
             </Row>
         </Container>);
 }
+
+
