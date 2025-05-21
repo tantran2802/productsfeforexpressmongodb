@@ -16,7 +16,7 @@ export default function Info(){
   }
     function fetchProductsData(){
         fetch(
-            'https://ogu8fnrpv7.execute-api.ap-southeast-1.amazonaws.com/dev/api/products',
+            'https://jv0q0aihea.execute-api.ap-southeast-1.amazonaws.com/dev/api/products',
         {
             method: 'GET',
         }).then(async (data) => {
